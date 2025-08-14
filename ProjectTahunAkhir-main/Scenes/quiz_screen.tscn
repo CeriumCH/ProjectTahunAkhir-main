@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgs7j36bedu2r"]
+
+[ext_resource type="Script" uid="uid://ccuwbgqic7afn" path="res://quiz_manager.gd" id="1_8lpwt"]
+
+[node name="QuizScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="QuestionLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="OptionA" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.0
+offset_top = 56.0
+offset_right = -100.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionB" type="Button" parent="."]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 376.0
+offset_right = 272.0
+offset_bottom = 384.0
+
+[node name="OptionC" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 72.0
+offset_top = -136.0
+offset_right = 80.0
+offset_bottom = -128.0
+grow_vertical = 0
+
+[node name="OptionD" type="Button" parent="."]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 504.0
+offset_right = 272.0
+offset_bottom = 512.0
+
+[node name="QuizManager" type="Node" parent="."]
+script = ExtResource("1_8lpwt")
+
+[connection signal="pressed" from="OptionA" to="QuizManager" method="_on_option_a_pressed"]
+[connection signal="pressed" from="OptionB" to="QuizManager" method="_on_option_b_pressed"]
+[connection signal="pressed" from="OptionC" to="QuizManager" method="_on_option_c_pressed"]
+[connection signal="pressed" from="OptionD" to="QuizManager" method="_on_option_d_pressed"]

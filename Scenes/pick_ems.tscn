@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnnb0ffte4hr8"]
+
+[ext_resource type="Script" uid="uid://bilg4y7rk84mw" path="res://Scripts/pick_ems.gd" id="1_n3jqo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_413gn"]
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_413gn"]
+
+[node name="PickEms" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n3jqo")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.225887, 0.559347, 0.643209, 1)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -304.0
+offset_right = 164.0
+offset_bottom = 304.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_413gn")
+
+[node name="Chapter 1" type="Button" parent="Panel"]
+layout_mode = 1
+offset_left = 24.0
+offset_top = 48.0
+offset_right = 152.0
+offset_bottom = 120.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_413gn")
+text = "Chapter 1"
+
+[node name="Chapter 2" type="Button" parent="Panel"]
+layout_mode = 1
+offset_left = 176.0
+offset_top = 48.0
+offset_right = 304.0
+offset_bottom = 120.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_413gn")
+text = "Chapter 2"
+
+[connection signal="pressed" from="Panel/Chapter 1" to="." method="_on_chapter_1_pressed"]
+[connection signal="pressed" from="Panel/Chapter 2" to="." method="_on_chapter_2_pressed"]

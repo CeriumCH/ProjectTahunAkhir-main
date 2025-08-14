@@ -1,0 +1,17 @@
+[
+  {
+	"text": "Bagaimanakah ia berlaku?",
+	"options": ["Air", "Api", "Asap", "Angin"],
+	"correct": "Air"
+  },
+  {
+	"text": "Macam mana?",
+	"options": ["Begitu", "Begini", "Beliau", "Beta"],
+	"correct": "Begitu"
+  },
+  {
+	"text": "Di manakah dia?",
+	"options" : ["Di sana", "Di sini", "Di situ", "Di jauh"],
+	"correct": "Di sana"
+  }
+]

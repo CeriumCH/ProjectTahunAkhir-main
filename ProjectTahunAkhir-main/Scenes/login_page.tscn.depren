@@ -1,0 +1,318 @@
+[gd_scene load_steps=17 format=3 uid="uid://dhp32nvhqepdk"]
+
+[ext_resource type="Texture2D" uid="uid://d1q4s3hy4fanm" path="res://Assets/Pictures/minimalist-blue-e0q5nh2rivmv9eio.jpg" id="1_4yn74"]
+[ext_resource type="Script" uid="uid://b0j3v4f040o6l" path="res://Scripts/login_page.gd" id="1_mbtf0"]
+[ext_resource type="FontFile" uid="uid://b746ad6d8mi61" path="res://Assets/Fonts/GAMEDAY.ttf" id="2_n8muj"]
+[ext_resource type="FontFile" uid="uid://c43f62h6mfuul" path="res://Assets/Fonts/Game Played.otf" id="3_n8muj"]
+[ext_resource type="FontFile" uid="uid://cmb4apdsgkvh" path="res://Assets/Fonts/KGPerfectPenmanship.ttf" id="4_idivt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_idivt"]
+texture = ExtResource("1_4yn74")
+texture_margin_right = 1005.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4yn74"]
+bg_color = Color(0.796078, 0.858824, 0.988235, 1)
+border_width_left = 2
+border_width_top = 5
+border_width_right = 2
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0.0255361, 0.090051, 0.276889, 1)
+shadow_size = 16
+shadow_offset = Vector2(0, 9)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n8muj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n8muj"]
+bg_color = Color(0.868985, 0.868985, 0.868985, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 10
+shadow_size = 4
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_idivt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mbtf0"]
+bg_color = Color(0, 0.492892, 0.225908, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 22.0
+expand_margin_right = 22.0
+shadow_size = 4
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ow7qg"]
+bg_color = Color(2.93598e-06, 0.412443, 0.185592, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 12.0
+expand_margin_right = 12.0
+shadow_size = 4
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_idivt"]
+bg_color = Color(0, 0.659116, 0.312553, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 22.0
+expand_margin_right = 22.0
+shadow_size = 4
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_07om0"]
+bg_color = Color(0.667576, 0.0684256, 0.162685, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 22.0
+expand_margin_right = 22.0
+shadow_size = 4
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nifnj"]
+bg_color = Color(0.570463, 0.0504581, 0.13301, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 12.0
+expand_margin_right = 12.0
+shadow_size = 4
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eoymv"]
+bg_color = Color(0.889221, 0.129946, 0.237341, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 22.0
+expand_margin_right = 22.0
+shadow_size = 4
+shadow_offset = Vector2(0, 5)
+
+[node name="LoginPage" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mbtf0")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_idivt")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -140.0
+offset_top = 48.0
+offset_right = 5564.0
+offset_bottom = 1018.0
+grow_horizontal = 2
+scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 155
+theme_override_constants/outline_size = 340
+theme_override_constants/shadow_outline_size = 105
+theme_override_fonts/font = ExtResource("2_n8muj")
+theme_override_font_sizes/font_size = 800
+text = "Login Page"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -200.0
+offset_right = 140.0
+offset_bottom = 248.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4yn74")
+
+[node name="Label" type="Label" parent="Panel2"]
+layout_mode = 1
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 984.0
+offset_bottom = 976.0
+scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 45
+theme_override_constants/outline_size = 355
+theme_override_constants/shadow_outline_size = 400
+theme_override_fonts/font = ExtResource("3_n8muj")
+theme_override_font_sizes/font_size = 800
+text = "ID"
+justification_flags = 161
+
+[node name="LineEdit" type="LineEdit" parent="Panel2"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 72.0
+offset_right = 264.0
+offset_bottom = 108.0
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_idivt")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n8muj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_n8muj")
+placeholder_text = "Enter your ID..."
+alignment = 1
+max_length = 20
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="Label2" type="Label" parent="Panel2"]
+layout_mode = 1
+offset_left = 24.0
+offset_top = 136.0
+offset_right = 984.0
+offset_bottom = 1096.0
+scale = Vector2(0.05, 0.05)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 45
+theme_override_constants/outline_size = 355
+theme_override_constants/shadow_outline_size = 400
+theme_override_fonts/font = ExtResource("3_n8muj")
+theme_override_font_sizes/font_size = 800
+text = "Password"
+justification_flags = 161
+
+[node name="LineEdit2" type="LineEdit" parent="Panel2"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 192.0
+offset_right = 264.0
+offset_bottom = 228.0
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_idivt")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/focus = SubResource("StyleBoxEmpty_n8muj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_n8muj")
+placeholder_text = "Enter your password..."
+alignment = 1
+max_length = 20
+context_menu_enabled = false
+emoji_menu_enabled = false
+
+[node name="Confirm" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = -112.0
+offset_right = 160.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.605829, 0.556085)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 54
+theme_override_styles/focus = SubResource("StyleBoxEmpty_idivt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mbtf0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ow7qg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_idivt")
+text = "✓"
+
+[node name="Cancel" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -108.0
+offset_top = -112.0
+offset_right = 24.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.605829, 0.556085)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 54
+theme_override_styles/focus = SubResource("StyleBoxEmpty_idivt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_07om0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nifnj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_eoymv")
+text = "✕"
+
+[connection signal="pressed" from="Panel2/Confirm" to="." method="_on_confirm_pressed"]
