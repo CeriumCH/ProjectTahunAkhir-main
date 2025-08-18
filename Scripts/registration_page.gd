@@ -3,16 +3,19 @@ extends Control
 func _ready():
 	Firebase.Auth.signup_succeeded.connect(on_signup_succeeded)
 	Firebase.Auth.signup_failed.connect(on_signup_failed)
-	
+		
 	if Firebase.Auth.check_auth_file():
-		$Panel/StateLabel.text = "Signed in"
-
+		$Panel/StateLabel.text = "Logged in"
+		call_deferred("goto_game")
 		
 func _on_button_pressed() -> void:
 	var email = $Panel2/ID_label
 	var password = $Panel2/password_label
 	Firebase.Auth.signup_with_email_and_password(email, password)
 
+func goto_game():
+	get_tree().change_scene_to_file("res://Scenes/pick_ems.tscn")
+	
 func _on_register_pressed() -> void:
 	var email = $Panel2/email.text
 	var password = $Panel2/password_label.text
@@ -22,7 +25,9 @@ func _on_register_pressed() -> void:
 func on_signup_succeeded(auth):
 	print(auth)
 	$Panel/StateLabel.text = "Signup success"
-	get_tree().change_scene_to_file("res://Scenes/login_page.tscn")
+	Firebase.Auth.save_auth(auth)
+	Firebase.Auth.load_auth()
+	get_tree().change_scene_to_file("res://Scenes/pick_ems.tscn")
 	
 func on_signup_failed(error_code, message):
 	print(error_code)
