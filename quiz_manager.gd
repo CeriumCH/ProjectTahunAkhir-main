@@ -17,7 +17,7 @@ func _ready():
 func end_quiz():
 	print("🎉 Quiz ended! Final score: %d" % score)
 	await get_tree().create_timer(0.2).timeout  # Give it 200ms to print
-	get_tree().quit()  # This stops the game (in editor: closes debugger)
+	get_tree().change_scene_to_file("res://Scenes/Clicky.tscn")
 
 
 func load_questions_from_json() -> void:

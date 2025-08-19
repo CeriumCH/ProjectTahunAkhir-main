@@ -9,7 +9,6 @@ var timer_started = false
 var item = preload("res://Scenes/ball.tscn")
 
 func _ready() -> void:
-	spawn_button.pressed.connect(_on_button_pressed)
 	game_timer.timeout.connect(_on_Timer_timeout) # make sure it's connected!
 
 func _process(delta: float) -> void:
@@ -33,7 +32,7 @@ func _on_Timer_timeout() -> void:
 	
 	# Show "Game Over" for 2 seconds
 	$GameOverLabel.visible = true
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(5).timeout
 	
 	# Switch to results
 	var result_scene = preload("res://Scenes/Result.tscn").instantiate()

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://mh6wdomonp57"]
 
-[ext_resource type="Script" uid="uid://dhybdgbnxllxx" path="res://Scenes/clicky.gd" id="1_0o684"]
+[ext_resource type="Script" uid="uid://dhybdgbnxllxx" path="res://Scripts/clicky.gd" id="1_0o684"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0o684"]
 distance = -2.0
