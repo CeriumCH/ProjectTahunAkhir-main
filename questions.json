@@ -1,17 +1,27 @@
 [
-  {
-	"text": "Bagaimanakah ia berlaku?",
-	"options": ["Air", "Api", "Asap", "Angin"],
-	"correct": "Air"
-  },
-  {
-	"text": "Macam mana?",
-	"options": ["Begitu", "Begini", "Beliau", "Beta"],
-	"correct": "Begitu"
-  },
-  {
-	"text": "Di manakah dia?",
-	"options" : ["Di sana", "Di sini", "Di situ", "Di jauh"],
-	"correct": "Di sana"
-  }
+	{
+		"text": "Which layer of the OSI model is responsible for logical addressing and routing?",
+		"options": ["Data Link", "Transport", "Network", "Physical"],
+		"correct": "Network"
+	},
+	{
+		"text": "What does TCP stand for?",
+		"options": ["Transfer Control Protocol","Transmission Control Protocol", "Transport Channel Protocol", "Trusted Communication Protocol"],
+		"correct": "Transmission Control Protocol"
+	},
+	{
+		"text": "Which of the following protocols works at the Application Layer of the TCP/IP model?",
+		"options": ["HTTP", "IP", "UDP", "ICMP"],
+		"correct": "HTTP"
+	},
+	{
+		"text": "Which device is used to connect two different networks and determine the best path for data?",
+		"options": ["Switch", "Router", "Hub", "Repeater"],
+		"correct": "Router"
+	},
+	{
+		"text": "In TCP/IP, which layer is responsible for breaking messages into segments?",
+		"options": ["Application", "Internet", "Transport", "Host-to-Network"],
+		"correct": "Transport"
+	}
 ]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0rncwrol2yk6"]
+
+[ext_resource type="Script" uid="uid://bhvqsc6kpro8o" path="res://Scenes/result.gd" id="1_m2k5w"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_m2k5w"]
+distance = -640.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ojf0l"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_37uq0"]
+normal = Vector2(-1, 0)
+
+[node name="Result" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m2k5w")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="bottom" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_m2k5w")
+
+[node name="left" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_ojf0l")
+
+[node name="right" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(360, 0)
+shape = SubResource("WorldBoundaryShape2D_37uq0")
