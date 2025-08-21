@@ -5,9 +5,12 @@ func _ready():
 	Firebase.Auth.signup_failed.connect(on_signup_failed)
 		
 	if Firebase.Auth.check_auth_file():
+		Firebase.Auth.load_auth()
 		$Panel/StateLabel.text = "Logged in"
 		call_deferred("goto_game")
-		
+	else:
+		print("No auth file yet, waiting for signup...")
+
 func _on_button_pressed() -> void:
 	var email = $Panel2/ID_label
 	var password = $Panel2/password_label

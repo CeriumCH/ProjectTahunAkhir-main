@@ -9,3 +9,9 @@ func _on_chapter_1_pressed() -> void:
 
 func _on_chapter_2_pressed() -> void:
 	pass # Replace with function body.
+
+
+func _on_log_out_pressed() -> void:
+	Firebase.Auth.logout()
+	print("Logout Success")
+	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
