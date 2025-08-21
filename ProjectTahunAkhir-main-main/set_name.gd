@@ -3,7 +3,11 @@ extends Control
 var COLLECTION_ID = "player_stats"
 
 func _ready() -> void:
-	Firebase.Auth.load_auth()
+	if Firebase.Auth.check_auth_file():
+		print("Auth file exists, loading...")
+		Firebase.Auth.load_auth()
+	else:
+		print("No auth file found, sending back to login")
 	
 func _on_submit_pressed() -> void:
 	save_data()
